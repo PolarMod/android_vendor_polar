@@ -1,4 +1,4 @@
-droidbuild(){
+droidbuild_module(){
   if ndef VENDOR_POLAR_LOADED
   then  
     require_command patch

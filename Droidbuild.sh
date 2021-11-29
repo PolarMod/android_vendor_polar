@@ -15,6 +15,10 @@ droidbuild_module(){
     exec cp $LOCAL_PATH/overlays/updater_config.xml $BASEDIR/vendor/lineage/overlay/common/packages/apps/Updater/res/values/strings.xml
     exec cp $LOCAL_PATH/overlays/updater_config.xml $BASEDIR/vendor/lineage/overlay/packages/apps/Updater/res/values/strings.xml 
     success "Patched updater"
+    info "Patching prebuilts"
+    exec rm -rf $BASEDIR/prebuilts/prebuiltapks
+    exec cp -r $LOCAL_PATH/prebuilts $BASEDIR/prebuilts/prebuiltapks
+    success "Succesfully patched prebuilts"
     export VENDOR_POLAR_LOADED=1
   else
     info "vendor_polar is already enabled, skipping droidbuild for it."

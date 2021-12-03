@@ -8,7 +8,7 @@ PRODUCT_PACKAGES += \
     MozillaNlpBackend \
     NominatimNlpBackend \
     Recorder \
+		GeometricWeather \
     Updater
 
-TARGET_USER_BLUR := true
 

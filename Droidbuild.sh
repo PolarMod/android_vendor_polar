@@ -1,3 +1,8 @@
+include_if_exists "$BASEDIR/incremental_vars.sh"
+
+#FIXME: Use build.sh incremental builds when they
+#will be available
+
 droidbuild_module(){
   if ndef VENDOR_POLAR_LOADED
   then  
@@ -20,6 +25,7 @@ droidbuild_module(){
     exec cp -r $LOCAL_PATH/prebuilts $BASEDIR/prebuilts/prebuiltapks
     success "Succesfully patched prebuilts"
     export VENDOR_POLAR_LOADED=1
+    echo "VENDOR_POLAR_LOADED=1" >> $BASEDIR/incremental_vars.sh
   else
     info "vendor_polar is already enabled, skipping droidbuild for it."
   fi

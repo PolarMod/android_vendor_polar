@@ -12,7 +12,7 @@ PRODUCT_PACKAGES += \
     Updater
 
 ifeq ($(TARGET_USES_MICROG), 1)
-	PRODUCT_PACKAGES += \
+PRODUCT_PACKAGES += \
 		additional_repos \
     com.google.android.maps.xml \
     com.google.android.maps.jar \

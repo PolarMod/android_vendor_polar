@@ -1,4 +1,4 @@
-ifeq ($(ROM_BUILDTYPE),MICROG)
+ifeq ($(TARGET_USES_MICROG),1)
 
 LOCAL_PATH := $(call my-dir)
 

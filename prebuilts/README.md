@@ -20,4 +20,5 @@ The included APKs are:
    * GsfProxy: a GmsCore proxy for legacy GCM compatibility
    * FakeStore: an empty package that mocks the existence of the Google Play Store
    * com.google.android.maps: legacy microG's mapsv1 reimplementation
- * Geometric Weather(F-Droid version). [Original repo](https://github.com/WangDaYeeeeee/GeometricWeather) [F-Droid page](https://f-droid.org/en/packages/wangdaye.com.geometricweather/)
+ * Nextcloud (F-Droid version). [Original repository](https://github.com/nextcloud/android) [F-Droid page](https://f-droid.org/en/packages/com.nextcloud.client/)
+ * Geometric Weather(F-Droid version). [Original repository](https://github.com/WangDaYeeeeee/GeometricWeather) [F-Droid page](https://f-droid.org/en/packages/wangdaye.com.geometricweather/)

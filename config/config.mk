@@ -8,16 +8,21 @@ PRODUCT_PACKAGES += \
     MozillaNlpBackend \
     NominatimNlpBackend \
     Recorder \
-		GeometricWeather \
+    GeometricWeather \
     Updater
+
+PRODUCT_PRODUCT_PROPERTIES += \
+   ro.surface_flinger.supports_background_blur=1			      
 
 ifeq ($(TARGET_USES_MICROG), 1)
 PRODUCT_PACKAGES += \
-		additional_repos \
+    additional_repos \
     com.google.android.maps.xml \
     com.google.android.maps.jar \
     GmsCore \
     GsfProxy \
+    AuroraStore \
+    AuroraServices \
     microg-a5k.xml 
 endif
 

@@ -23,6 +23,7 @@ PRODUCT_PACKAGES += \
     GsfProxy \
     AuroraStore \
     AuroraServices \
+    FakeStore \
     microg-a5k.xml 
 endif
 

@@ -10,7 +10,7 @@ include $(BUILD_PREBUILT)
 
 include $(CLEAR_VARS)
 LOCAL_MODULE_TAGS := optional
-LOCAL_MODULE := FakeStore
+LOCAL_MODULE := Store
 LOCAL_SRC_FILES := com.android.vending.apk
 LOCAL_MODULE_CLASS := APPS
 LOCAL_PRIVILEGED_MODULE := true

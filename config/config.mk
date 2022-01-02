@@ -10,10 +10,11 @@ PRODUCT_PACKAGES += \
     Recorder \
     GeometricWeather \
     Updater \
-		FaceUnlockServiceAndroidStudio
-
+    FaceUnlockService
+    
 PRODUCT_PRODUCT_PROPERTIES += \
-   ro.surface_flinger.supports_background_blur=1			      
+   ro.surface_flinger.supports_background_blur=1 \
+   ro.face_unlock_service.enabled=true 
 
 ifeq ($(TARGET_USES_MICROG), 1)
 PRODUCT_PACKAGES += \

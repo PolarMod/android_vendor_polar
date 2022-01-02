@@ -9,7 +9,8 @@ PRODUCT_PACKAGES += \
     NominatimNlpBackend \
     Recorder \
     GeometricWeather \
-    Updater
+    Updater \
+		FaceUnlockServiceAndroidStudio
 
 PRODUCT_PRODUCT_PROPERTIES += \
    ro.surface_flinger.supports_background_blur=1			      

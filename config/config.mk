@@ -12,7 +12,7 @@ PRODUCT_PACKAGES += \
     Updater \
     FaceUnlockService
     
-PRODUCT_PRODUCT_PROPERTIES += \
+PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
    ro.surface_flinger.supports_background_blur=1 \
    ro.face_unlock_service.enabled=true 
 

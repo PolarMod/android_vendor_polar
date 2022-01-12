@@ -10,7 +10,7 @@ PRODUCT_PACKAGES += \
     Recorder \
     GeometricWeather \
     Updater \
-		OminJaws \
+    OmniJaws \
     FaceUnlockService
     
 PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \

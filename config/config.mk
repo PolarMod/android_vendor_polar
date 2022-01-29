@@ -10,7 +10,7 @@ PRODUCT_PACKAGES += \
     Recorder \
     GeometricWeather \
     Updater \
-		OminJaws \
+    OmniJaws \
     FaceUnlockService
 
 # FaceUnlock and blur on non-go systems

@@ -20,6 +20,10 @@ PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
    ro.face_unlock_service.enabled=true 
 endif
 
+# Always update recovery
+PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
+	 persist.vendor.recovery_update=true
+
 # MicroG
 ifeq ($(TARGET_USES_MICROG), 1)
 PRODUCT_PACKAGES += \

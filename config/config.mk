@@ -20,7 +20,7 @@ PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
    ro.face_unlock_service.enabled=true 
 endif
 
-# Always update recovery
+# Disable runtime recovery updates
 PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
 	 persist.vendor.recovery_update=false
 
@@ -32,8 +32,6 @@ PRODUCT_PACKAGES += \
     com.google.android.maps.jar \
     GmsCore \
     GsfProxy \
-    AuroraStore \
-    AuroraServices \
     Store \
     microg-a5k.xml 
 endif

@@ -22,7 +22,7 @@ endif
 
 # Always update recovery
 PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
-	 persist.vendor.recovery_update=true
+	 persist.vendor.recovery_update=false
 
 # MicroG
 ifeq ($(TARGET_USES_MICROG), 1)

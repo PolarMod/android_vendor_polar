@@ -10,14 +10,12 @@ PRODUCT_PACKAGES += \
     Recorder \
     GeometricWeather \
     Updater \
-    OmniJaws \
-    FaceUnlockService
+    OmniJaws 
 
 # FaceUnlock and blur on non-go systems
 ifneq ($(PRODUCT_TYPE), go)
 PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
-   ro.surface_flinger.supports_background_blur=1 \
-   ro.face_unlock_service.enabled=true 
+   ro.surface_flinger.supports_background_blur=1 
 endif
 
 # Always update recovery
@@ -38,12 +36,18 @@ PRODUCT_PACKAGES += \
     microg-a5k.xml 
 endif
 
-
-# G-Visual Mod
-PRODUCT_PACKAGES += \
-    GVM-SBH-L \
-    GVM-SBH-M \
-    GVM-SBH-XL \
-    GVM-URM-M \
-    GVM-URM-L \
-    GVM-URM-R
+ifeq ($(TARGET_SUPPORTS_GVISUAL), 1)
+  # G-Visual Mod
+  PRODUCT_PACKAGES += \
+      GVM-SBH-L \
+      GVM-SBH-M \
+      GVM-SBH-XL \
+      GVM-URM-M \
+      GVM-URM-L \
+      GVM-URM-R
+  PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
+	  	ro.system.supports_gvisual=true
+else
+  PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
+			ro.system.supports_gvisual=false
+endif

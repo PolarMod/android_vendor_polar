@@ -12,7 +12,7 @@ PRODUCT_PACKAGES += \
     Updater \
     OmniJaws 
 
-# FaceUnlock and blur on non-go systems
+# Enable blur on non-go systems
 ifneq ($(PRODUCT_TYPE), go)
 PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
    ro.surface_flinger.supports_background_blur=1 
@@ -20,7 +20,7 @@ endif
 
 # Disable runtime recovery updates
 PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
-	 persist.vendor.recovery_update=false
+   persist.vendor.recovery_update=false
 
 # MicroG
 ifeq ($(TARGET_USES_MICROG), 1)
@@ -47,5 +47,5 @@ ifeq ($(TARGET_SUPPORTS_GVISUAL), 1)
 	  	ro.system.supports_gvisual=true
 else
   PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
-			ro.system.supports_gvisual=false
+		ro.system.supports_gvisual=false
 endif

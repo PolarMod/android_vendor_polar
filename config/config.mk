@@ -10,21 +10,12 @@ PRODUCT_PACKAGES += \
     Recorder \
     GeometricWeather \
     Updater \
-<<<<<<< HEAD
     OmniJaws 
-=======
-    OmniJaws
->>>>>>> 83e12fb126495f7d702cdda74753e7a472a273bb
 
 # FaceUnlock and blur on non-go systems
 ifneq ($(PRODUCT_TYPE), go)
 PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
-<<<<<<< HEAD
    ro.surface_flinger.supports_background_blur=1 
-=======
-   ro.surface_flinger.supports_background_blur=1 \
-   ro.face_unlock_service.enabled=false 
->>>>>>> 83e12fb126495f7d702cdda74753e7a472a273bb
 endif
 
 # Disable runtime recovery updates

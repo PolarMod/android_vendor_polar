@@ -13,5 +13,6 @@ LOCAL_MODULE := sysconfig_nogms
 LOCAL_MODULE_TAGS := optional
 LOCAL_MODULE_PATH := $(TARGET_OUT_ETC)/sysconfig
 LOCAL_SRC_FILES := nogms.xml
+LOCAL_MODULE_CLASS := ETC
 include $(BUILD_PREBUILT)
 

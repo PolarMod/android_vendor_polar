@@ -34,7 +34,7 @@ PRODUCT_PACKAGES += \
     microg-a5k.xml 
 else
 PRODUCT_PACKAGES += \
-	  nogms_sysconfig
+	  sysconfig_nogms
 endif
 
 ifeq ($(TARGET_SUPPORTS_GVISUAL), 1)

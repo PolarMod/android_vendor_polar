@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<config>
+    <allow-in-power-save-except-idle package="org.fdroid.fdroid" />
+
+    <allow-unthrottled-location package="org.microg.nlp.backend.nominatim" />
+    <allow-unthrottled-location package="org.microg.nlp.backend.ichnaea" />
+
+    <system-user-whitelisted-app package="org.fdroid.fdroid.privileged" />
+</config>

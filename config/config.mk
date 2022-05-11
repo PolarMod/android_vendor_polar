@@ -32,6 +32,9 @@ PRODUCT_PACKAGES += \
     GsfProxy \
     Store \
     microg-a5k.xml 
+else
+PRODUCT_PACKAGES += \
+	  nogms_sysconfig
 endif
 
 ifeq ($(TARGET_SUPPORTS_GVISUAL), 1)

@@ -47,5 +47,8 @@ ifeq ($(TARGET_SUPPORTS_GVISUAL), 1)
 	  	ro.system.supports_gvisual=true
 else
   PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
-		ro.system.supports_gvisual=false
+		 ro.system.supports_gvisual=false
 endif
+
+# Override LINEAGE_VERSION
+LINEAGE_VERSION="PolarMod-1.2-alpha1"

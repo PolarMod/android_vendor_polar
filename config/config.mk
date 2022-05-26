@@ -32,6 +32,8 @@ PRODUCT_PACKAGES += \
     GsfProxy \
     Store \
     microg-a5k.xml 
+else 
+PRODUCT_PACKAGES += polarmod.xml
 endif
 
 ifeq ($(TARGET_SUPPORTS_GVISUAL), 1)

@@ -20,5 +20,6 @@ The included APKs are:
    * GsfProxy: a GmsCore proxy for legacy GCM compatibility
    * FakeStore: an empty package that mocks the existence of the Google Play Store
    * com.google.android.maps: legacy microG's mapsv1 reimplementation
+ * DejaVu NLP backed(F-Droid version) [Original repository](https://github.com/n76/DejaVu) [F-Droid page](https://f-droid.org/en/packages/org.fitchfamily.android.dejavu/)
  * Nextcloud (F-Droid version). [Original repository](https://github.com/nextcloud/android) [F-Droid page](https://f-droid.org/en/packages/com.nextcloud.client/)
  * Geometric Weather(F-Droid version). [Original repository](https://github.com/WangDaYeeeeee/GeometricWeather) [F-Droid page](https://f-droid.org/en/packages/wangdaye.com.geometricweather/)

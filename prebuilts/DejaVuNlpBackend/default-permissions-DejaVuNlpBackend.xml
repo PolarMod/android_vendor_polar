@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<exceptions>
+      <exception package="org.fitchfamily.android.dejavu">
+        <permission name="android.permission.ACCESS_COARSE_LOCATION" fixed="true"/>
+        <permission name="android.permission.ACCESS_FINE_LOCATION" fixed="true"/>
+        <permission name="android.permission.ACCESS_WIFI_STATE" fixed="true"/>
+        <permission neam="android.permission.CHANGE_WIFI_STATE" fixed="true" />  
+     </exception>
+</exceptions>       

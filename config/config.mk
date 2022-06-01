@@ -10,7 +10,8 @@ PRODUCT_PACKAGES += \
     Recorder \
     GeometricWeather \
     Updater \
-    OmniJaws 
+    OmniJaws \
+		GameSpace
 
 # Enable blur on non-go systems
 ifneq ($(PRODUCT_TYPE), go)
@@ -54,4 +55,4 @@ endif
 
 # Override LINEAGE_VERSION
 LINEAGE_VERSION="PolarMod-1.2-alpha1"
-LINEAGE_DISPLAY_VERSION=$(LINEAGE_VERSION):
+LINEAGE_DISPLAY_VERSION=$(LINEAGE_VERSION)

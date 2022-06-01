@@ -33,7 +33,7 @@ droidbuild_module(){
     info "vendor_polar is already enabled, skipping droidbuild for it."
   fi
   # Override privacy settings for NLP backends
-  TARGET_PRIVACY_OVERRIDE_PACKAGES+=org.microg.nlp
-  TARGET_PRIVACY_OVERRIDE_PACKAGES+=org.microg.nlp.backend.ichnaea
-  TARGET_PRIVACY_OVERRIDE_PACKAGES+=org.fitchfamily.android.dejavu
+  TARGET_PRIVACY_OVERRIDE_PACKAGES+=(org.microg.nlp)
+  TARGET_PRIVACY_OVERRIDE_PACKAGES+=(org.microg.nlp.backend.ichnaea)
+  TARGET_PRIVACY_OVERRIDE_PACKAGES+=(org.fitchfamily.android.dejavu)
 }

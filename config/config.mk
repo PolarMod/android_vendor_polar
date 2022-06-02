@@ -37,22 +37,6 @@ else
 PRODUCT_PACKAGES += polarmod.xml
 endif
 
-ifeq ($(TARGET_SUPPORTS_GVISUAL), 1)
-  # G-Visual Mod
-  PRODUCT_PACKAGES += \
-      GVM-SBH-L \
-      GVM-SBH-M \
-      GVM-SBH-XL \
-      GVM-URM-M \
-      GVM-URM-L \
-      GVM-URM-R
-  PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
-	  	ro.system.supports_gvisual=true
-else
-  PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
-		 ro.system.supports_gvisual=false
-endif
-
 # Override LINEAGE_VERSION
 LINEAGE_VERSION="PolarMod-1.2-alpha1"
 LINEAGE_DISPLAY_VERSION=$(LINEAGE_VERSION)

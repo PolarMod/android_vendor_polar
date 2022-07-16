@@ -24,9 +24,6 @@ droidbuild_module(){
     exec rm -rf $BASEDIR/prebuilts/prebuiltapks
     exec cp -r $LOCAL_PATH/prebuilts $BASEDIR/prebuilts/prebuiltapks
     success "Succesfully patched prebuilts"
-    info "Adding G-Visual Mod RRO packages"
-    exec cp -r $LOCAL_PATH/overlays/gvisual $BASEDIR/vendor/lineage/overlay/gvisual
-    success "Added G-Visual Mod RRO packages"
     export VENDOR_POLAR_LOADED=1
     echo "VENDOR_POLAR_LOADED=1" >> $BASEDIR/incremental_vars.sh
   else

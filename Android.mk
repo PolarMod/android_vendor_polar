@@ -1,3 +1,3 @@
 CODENAME := "magika"
-BUILD_NUMBER_FROM_FILE := "PolarMod-1.2-alpha1-${signature}"
+BUILD_NUMBER_FROM_FILE := "PolarMod-1.2-alpha2-${signature}"
 

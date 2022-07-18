@@ -38,6 +38,11 @@ else
 PRODUCT_PACKAGES += polarmod.xml
 endif
 
+# GmsCompat
+ifeq ($(TARGET_SUPPORTS_GMSCOMPAT), 1)
+PRODUCT_PACKAGES += GmsCompat
+endif
+
 # Override LINEAGE_VERSION
 LINEAGE_VERSION="PolarMod-1.2-alpha1"
 LINEAGE_DISPLAY_VERSION=$(LINEAGE_VERSION)

@@ -6,13 +6,13 @@ PRODUCT_PACKAGES += \
     Nextcloud \
     UnifiedNlp \
     MozillaNlpBackend \
-		DejavuNlpBackend \
+    DejavuNlpBackend \
     NominatimNlpBackend \
     Recorder \
     GeometricWeather \
     Updater \
     OmniJaws \
-		GameSpace
+    GameSpace
 
 # Enable blur on non-go systems
 ifneq ($(PRODUCT_TYPE), go)
@@ -41,6 +41,8 @@ endif
 # GmsCompat
 ifeq ($(TARGET_SUPPORTS_GMSCOMPAT), 1)
 PRODUCT_PACKAGES += GmsCompat
+else
+$(warning "You are building without GMS compatabilitylayer")
 endif
 
 # Override LINEAGE_VERSION

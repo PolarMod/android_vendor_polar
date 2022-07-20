@@ -40,7 +40,7 @@ endif
 
 # GmsCompat
 ifeq ($(TARGET_SUPPORTS_GMSCOMPAT), 1)
-PRODUCT_PACKAGES += GmsCompat
+#PRODUCT_PACKAGES += GmsCompat
 PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
    ro.system.gms_compat=true
 else

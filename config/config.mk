@@ -44,7 +44,7 @@ PRODUCT_PACKAGES += GmsCompat
 PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
    ro.system.gms_compat=true
 else
-$(warning "You are building without GMS compatabilitylayer")
+$(warning "You are building without GMS compatability layer")
 PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
    ro.system.gms_compat=false
 endif

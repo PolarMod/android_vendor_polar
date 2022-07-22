@@ -2,6 +2,8 @@
 <config>
     <allow-in-power-save-except-idle package="org.fdroid.fdroid" />
 
+    <allow-in-power-save-except-idle package="org.omnirom.omnijaws" />
+
     <allow-unthrottled-location package="org.microg.nlp.backend.nominatim" />
     <allow-unthrottled-location package="org.microg.nlp.backend.ichnaea" />
     <allow-unthrottled-location package="org.microg.nlp" />

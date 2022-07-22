@@ -6,7 +6,7 @@ PRODUCT_PACKAGES += \
     Nextcloud \
     UnifiedNlp \
     MozillaNlpBackend \
-    DejavuNlpBackend \
+    DejaVuNlpBackend \
     NominatimNlpBackend \
     Recorder \
     GeometricWeather \

@@ -42,9 +42,11 @@ endif
 ifeq ($(TARGET_SUPPORTS_GMSCOMPAT), 1)
 PRODUCT_PACKAGES += GmsCompat
 PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
-   ro.system.gms_compat=true
+   ro.system.gms_compat=true \
+   persist.sys.strictmode.visual=0 \
+   persist.sys.strictmode.disable=1
+$(warning Disabling StrictMode in runtime due to enabled GmsCompat)
 else
-$(warning "You are building without GMS compatability layer")
 PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
    ro.system.gms_compat=false
 endif

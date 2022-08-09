@@ -24,6 +24,10 @@ droidbuild_module(){
     exec rm -rf $BASEDIR/prebuilts/prebuiltapks
     exec cp -r $LOCAL_PATH/prebuilts $BASEDIR/prebuilts/prebuiltapks
     success "Succesfully patched prebuilts"
+    info "Adding overlay for frameworks"
+    exec mkdir -p $BASEDIR/vendor/lineage/overlay/common/frameworks/base/core/res/res/values/
+    exec cp $LOCAL_PATH/overlays/frameworks_config.xml $BASEDIR/vendor/lineage/overlay/common/frameworks/base/core/res/res/values/config.xml
+    success "Added overlay for frameworks"
     export VENDOR_POLAR_LOADED=1
     echo "VENDOR_POLAR_LOADED=1" >> $BASEDIR/incremental_vars.sh
   else

@@ -48,6 +48,9 @@ PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
    ro.system.gms_compat=false
 endif
 
+# Include RROs config
+include vendor/polar/config/rro.mk
+
 # Override LINEAGE_VERSION
 LINEAGE_VERSION="PolarMod-1.2-beta1"
 LINEAGE_DISPLAY_VERSION=$(LINEAGE_VERSION)

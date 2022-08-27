@@ -88,8 +88,8 @@ PRODUCT_PACKAGES += \
 	ZigZagWiFiOverlay
 
 #FOD resources
-ifeq ($(TARGET_HAS_FOD), true)
+#ifeq ($(TARGET_HAS_FOD), true)
 PRODUCT_PACKAGES += \
         UdfpsAnimations \
 	UdfpsIcons
-endif
+#endif

@@ -52,5 +52,5 @@ endif
 include vendor/polar/config/rro.mk
 
 # Override LINEAGE_VERSION
-LINEAGE_VERSION="PolarMod-1.2-beta2"
+LINEAGE_VERSION="PolarMod-1.2-beta3"
 LINEAGE_DISPLAY_VERSION=$(LINEAGE_VERSION)

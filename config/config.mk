@@ -54,3 +54,5 @@ include vendor/polar/config/rro.mk
 # Override LINEAGE_VERSION
 LINEAGE_VERSION="PolarMod-1.2-beta3"
 LINEAGE_DISPLAY_VERSION=$(LINEAGE_VERSION)
+
+include_if_exists vendor/polar/config/private/config.mk

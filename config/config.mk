@@ -55,4 +55,4 @@ include vendor/polar/config/rro.mk
 LINEAGE_VERSION="PolarMod-1.2-rc1"
 LINEAGE_DISPLAY_VERSION=$(LINEAGE_VERSION)
 
-include_if_exists vendor/polar/config/private/config.mk
+-include vendor/polar/config/private/config.mk

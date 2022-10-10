@@ -42,7 +42,8 @@ endif
 ifeq ($(TARGET_SUPPORTS_GMSCOMPAT), 1)
 PRODUCT_PACKAGES += GmsCompat
 PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
-   ro.system.gms_compat=true 
+   ro.system.gms_compat=true \
+   ro.build.stock_fingerprint=$(PRODUCT_STOCK_FINGERPRINT)
 else
 PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
    ro.system.gms_compat=false
@@ -52,7 +53,7 @@ endif
 include vendor/polar/config/rro.mk
 
 # Override LINEAGE_VERSION
-LINEAGE_VERSION="PolarMod-1.2-rc1"
+LINEAGE_VERSION="PolarMod-1.2-rc2"
 LINEAGE_DISPLAY_VERSION=$(LINEAGE_VERSION)
 
 -include vendor/polar/config/private/config.mk

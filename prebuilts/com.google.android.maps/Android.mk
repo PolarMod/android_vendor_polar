@@ -1,5 +1,3 @@
-ifeq ($(ROM_BUILDTYPE),MICROG)
-
 LOCAL_PATH := $(call my-dir)
 
 include $(CLEAR_VARS)
@@ -20,4 +18,3 @@ LOCAL_CERTIFICATE := PRESIGNED
 LOCAL_REQUIRED_MODULES := com.google.android.maps.xml
 include $(BUILD_PREBUILT)
 
-endif

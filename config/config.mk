@@ -24,19 +24,7 @@ endif
 PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
    persist.vendor.recovery_update=false
 
-# MicroG
-ifeq ($(TARGET_USES_MICROG), 1)
-PRODUCT_PACKAGES += \
-    additional_repos \
-    com.google.android.maps.xml \
-    com.google.android.maps.jar \
-    GmsCore \
-    GsfProxy \
-    Store \
-    microg-a5k.xml 
-else 
 PRODUCT_PACKAGES += polarmod.xml
-endif
 
 # GmsCompat
 ifeq ($(TARGET_SUPPORTS_GMSCOMPAT), 1)

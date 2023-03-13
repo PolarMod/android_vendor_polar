@@ -10,7 +10,8 @@ PRODUCT_PACKAGES += \
     Recorder \
     GeometricWeather \
     Updater \
-    OmniJaws 
+    OmniJaws \
+    GeometricWeather 
 
 # Enable blur on non-go systems
 ifneq ($(PRODUCT_TYPE), go)

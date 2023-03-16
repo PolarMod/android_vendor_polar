@@ -11,7 +11,7 @@ PRODUCT_PACKAGES += \
     GeometricWeather \
     Updater \
     OmniJaws \
-    GeometricWeather 
+    GameSpace 
 
 # Enable blur on non-go systems
 ifneq ($(PRODUCT_TYPE), go)

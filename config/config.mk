@@ -40,9 +40,6 @@ else
      ro.system.gms_compat=false
 endif
 
-# Include RROs config
-include vendor/polar/config/rro.mk
-
 # Override LINEAGE_VERSION
 LINEAGE_VERSION="PolarMod-1.3-alpha1"
 LINEAGE_DISPLAY_VERSION=$(LINEAGE_VERSION)

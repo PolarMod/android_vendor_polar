@@ -41,7 +41,7 @@ else
 endif
 
 # Override LINEAGE_VERSION
-LINEAGE_VERSION="PolarMod-1.3-alpha1"
+LINEAGE_VERSION="PolarMod-1.3-alpha2"
 LINEAGE_DISPLAY_VERSION=$(LINEAGE_VERSION)
 
 -include vendor/polar/config/private/config.mk

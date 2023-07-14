@@ -2,7 +2,6 @@
 PRODUCT_PACKAGES += \
     FDroid \
     FDroidPrivilegedExtension \
-    Nextcloud \
     UnifiedNlp \
     MozillaNlpBackend \
     DejaVuNlpBackend \

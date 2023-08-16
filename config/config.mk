@@ -43,4 +43,8 @@ endif
 LINEAGE_VERSION="PolarMod-1.3-beta1"
 LINEAGE_DISPLAY_VERSION=$(LINEAGE_VERSION)
 
+# Add RROs
+include vendor/polar/config/rro.mk
+
+# Add private configuration
 -include vendor/polar/config/private/config.mk

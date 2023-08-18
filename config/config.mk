@@ -10,6 +10,7 @@ PRODUCT_PACKAGES += \
     GeometricWeather \
     Updater \
     OmniJaws \
+    Nextcloud \
     GameSpace 
 
 # Enable blur on non-go systems

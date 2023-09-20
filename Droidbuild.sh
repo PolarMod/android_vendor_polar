@@ -1,7 +1,7 @@
 include_if_exists "$BASEDIR/incremental_vars.sh"
 
 #FIXME: Use build.sh incremental builds when they
-#will be available
+#       will be available
 
 droidbuild_module(){
   if ndef VENDOR_POLAR_LOADED
@@ -14,12 +14,12 @@ droidbuild_module(){
     info "Adding PolarMod vendor to Lineage build system"
     exec patch $BASEDIR/vendor/lineage/config/common.mk $LOCAL_PATH/patches/common.mk.patch
     success "Patched Lineage vendor"
-    info "Patching Updater"
-    exec mkdir -p $BASEDIR/vendor/lineage/overlay/common/packages/apps/Updater/res/values
-    exec mkdir -p $BASEDIR/vendor/lineage/overlay/packages/apps/Updater/res/values
-    exec cp $LOCAL_PATH/overlays/updater_config.xml $BASEDIR/vendor/lineage/overlay/common/packages/apps/Updater/res/values/strings.xml
-    exec cp $LOCAL_PATH/overlays/updater_config.xml $BASEDIR/vendor/lineage/overlay/packages/apps/Updater/res/values/strings.xml 
-    success "Patched updater"
+    #info "Patching Updater"
+    #exec mkdir -p $BASEDIR/vendor/lineage/overlay/common/packages/apps/Updater/res/values
+    #exec mkdir -p $BASEDIR/vendor/lineage/overlay/packages/apps/Updater/res/values
+    #exec cp $LOCAL_PATH/overlays/updater_config.xml $BASEDIR/vendor/lineage/overlay/common/packages/apps/Updater/res/values/strings.xml
+    #exec cp $LOCAL_PATH/overlays/updater_config.xml $BASEDIR/vendor/lineage/overlay/packages/apps/Updater/res/values/strings.xml 
+    #success "Patched updater"
     info "Patching prebuilts"
     exec rm -rf $BASEDIR/prebuilts/prebuiltapks
     exec cp -r $LOCAL_PATH/prebuilts $BASEDIR/prebuilts/prebuiltapks

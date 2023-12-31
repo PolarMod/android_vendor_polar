@@ -11,7 +11,8 @@ PRODUCT_PACKAGES += \
     Updater \
     OmniJaws \
     Nextcloud \
-    GameSpace 
+    GameSpace \
+    Mirror 
 
 # Enable blur on non-go systems
 ifneq ($(PRODUCT_TYPE), go)
@@ -41,7 +42,7 @@ else
 endif
 
 # Override LINEAGE_VERSION
-LINEAGE_VERSION="PolarMod-1.3-r2"
+LINEAGE_VERSION="PolarMod-1.3-r3"
 LINEAGE_DISPLAY_VERSION=$(LINEAGE_VERSION)
 
 # Add RROs

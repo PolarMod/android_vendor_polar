@@ -12,8 +12,10 @@ PRODUCT_PACKAGES += \
     OmniJaws \
     Nextcloud \
     GameSpace \
-    Mirror \
-    Valor
+    Mirror
+
+## Daemons
+PRODUCT_PACKAGES += valord
 
 # Enable blur on non-go systems
 ifneq ($(PRODUCT_TYPE), go)
